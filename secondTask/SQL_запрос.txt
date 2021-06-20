@@ -1,0 +1,3 @@
+SELECT MAX(full_authors_name_collisions) AS `Полное имя автора`
+FROM `collisions` 
+GROUP BY (full_authors_name_collisions) HAVING COUNT(full_authors_name_collisions) <= 6
